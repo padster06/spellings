@@ -1,0 +1,55 @@
+*{
+	padding: 20px;
+
+	
+}
+.newSpellings{
+	visibility: hidden;
+	width: 80%;
+	background-color: #0f0b1a;
+	
+	position: absolute;
+	
+	display: inline-block;
+	text-align: center;
+}
+form{
+	
+}
+input{
+	color: white;
+	border: 3px solid white;
+	font-family: sans-serif;
+	font-size: 50px;
+	margin: 5px;
+	width: 75%;
+	background: none;
+	border-radius: 15px 5px;
+}
+button{
+	padding: 3px;
+	font-family: sans-serif;
+	font-size: 50px;
+	width: 80%;
+	background: none;
+	color: white;
+	border: 3px solid white;
+	margin-left: 10px;
+	border-radius: 15px 5px;
+}
+h1{
+	color: white;
+	font-family: sans-serif;
+	font-size: 70px
+
+}
+.spellings{
+	position: fixed;
+	width: 80%;
+	background-color: #0f0b1a;
+	
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	/*visibility: hidden;*/
+}
