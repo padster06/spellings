@@ -1,55 +1,35 @@
-var points;
-var answer;
-var spellings = [];
-var submit;
-var upload;
-var loop;
-var voices = [];
-var msg;
-var currentWord;
+var button;
+
+var spellings = [
+   'accommodate',
+   'accompany',
+   'according',
+   'achieve',
+   'aggressive',
+   'amateur',
+   'ancient',
+   'apparent',
+   'appreciate',
+   'attached',
+];
 
 function init() {
-	begin();
-	loop = setInterval(mainloop, 0);
-
+   button = document.getElementById('go');
+   console.log(button);
+   begin();
 }
 
 function begin() {
-	
-	msg = new SpeechSynthesisUtterance();
-	msg.text = 'hello';
-	spellings = ['build', 'none', 'hello'];
-	currentWord = Math.floor(Math.random()*spellings.length);
-	speechSynthesis.addEventListener('voiceschanged', makeVoices)
-	answer = document.getElementById('answer');
-	submit = document.getElementById('answered');
-	submit.addEventListener('click', clicked);
-
+   button.textContent = 'start';
+   console.log(button.value);
 }
 
-function mainloop() {
-	
-}
+function speak() {
+   button.textContent = 'next';
 
-function setData() {
-
-}
-
-function getData() {
-
-}
-
-function clicked() {
-	currentWord = Math.floor(Math.random()*spellings.length);
-	msg.text = spellings[currentWord];
-
-	speechSynthesis.speak(msg);
-}
-
-function makeVoices() {
-	voices = this.getVoices();
-	console.log(voices);
-	msg.text = spellings[currentWord];
-	speechSynthesis.speak(msg);
-
+   var msg = new SpeechSynthesisUtterance(
+      spellings[Math.floor(Math.random() * spellings.length)]
+   );
+   window.speechSynthesis.speak(msg);
+   console.log('spoke');
 }

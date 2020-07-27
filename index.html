@@ -1,36 +1,18 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>spellngs</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="lib.js"></script>
-</head>
-<body>
-	<div class="spellings">
-		<input type="text" name="answer" placeholder="answer" id="answer">
-		<button id="answered">go</button>
-		<button id="start">start</button>
-		<h1 id="points">points = 0</h1>
-	</div>
-	<div class="newSpellings">
-		<form>
-			<input type="text" name="spelling1" placeholder="1.">
-			<input type="text" name="spelling2" placeholder="2.">
-			<input type="text" name="spelling3" placeholder="3.">
-			<input type="text" name="spelling4" placeholder="4.">
-			<input type="text" name="spelling5" placeholder="5.">
-			<input type="text" name="spelling6" placeholder="6.">
-			<input type="text" name="spelling7" placeholder="7.">
-			<input type="text" name="spelling8" placeholder="8.">
-			<input type="text" name="spelling9" placeholder="9.">
-			<input type="text" name="spelling10" placeholder="10.">
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>spellings</title>
+      <script src="lib.js"></script>
+      <link rel="stylesheet" href="./style.css" />
+   </head>
+   <body>
+      <input type="text" placeholder="type the correct spelling here" />
+      <button id="go" onclick="speak()">start</button>
 
-		</form>
-		<button id="go">go</button>
-	</div>
-
-	<script type="text/javascript">
-		init();
-	</script>
-</body>
+      <script>
+         init();
+      </script>
+   </body>
 </html>
