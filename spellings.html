@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="lib.js"></script>
+      <link rel="stylesheet" href="./style/spelling.css" />
+      <title>Spellings</title>
+   </head>
+   <body>
+      <select name="cars" id="dropDown">
+         <option value="Spelling">Spelling</option>
+         <option value="Quiz">Quiz</option>
+      </select>
+
+      <form class="spelling">
+         <input type="text" placeholder="spelling 1" />
+         <input type="text" placeholder="spelling 2" />
+         <input type="text" placeholder="spelling 3" />
+         <input type="text" placeholder="spelling 4" />
+         <input type="text" placeholder="spelling 5" />
+         <input type="text" placeholder="spelling 6" />
+         <input type="text" placeholder="spelling 7" />
+         <input type="text" placeholder="spelling 8" />
+         <input type="text" placeholder="spelling 9" />
+         <input type="text" placeholder="spelling 10" />
+      </form>
+      <script>
+         setInterval(loop, 1);
+         function loop() {
+            if (document.getElementById('dropDown').selectedIndex == 1) {
+               window.location = 'index.html';
+            }
+         }
+      </script>
+   </body>
+</html>

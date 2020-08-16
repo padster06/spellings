@@ -5,11 +5,22 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>spellings</title>
       <script src="lib.js"></script>
-      <link rel="stylesheet" href="./style.css" />
+      <link rel="stylesheet" href="./style/style.css" />
    </head>
    <body>
-      <input type="text" placeholder="type the correct spelling here" />
-      <button id="go" onclick="speak()">start</button>
+      <select name="cars" id="dropDown">
+         <option value="Quiz">Quiz</option>
+         <option value="Spelling">Spelling</option>
+      </select>
+
+      <form id="form">
+         <input
+            type="text"
+            id="answer"
+            placeholder="type the correct spelling here"
+         />
+         <input type="submit" id="go" onclick="speak()" />
+      </form>
 
       <script>
          init();
